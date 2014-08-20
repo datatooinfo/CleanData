@@ -69,9 +69,8 @@ mean_colname <- c(3:5,43:45,83:85,123:125,163:165,203,216,229,242,255,
                   518,528,531,541,544,554)
 sd_colname <- c(6:8,46:47,86:88,126:128,166:168,204,217,230,243,256,
                 271:273,350:352,429:431,506,519,532,545)
-ave_colname <- c(2:1123)
 
-#Create mean, sd, and ave output files
+#Create mean and sd output files
 projectmean <- sapply(mergeData[, mean_colname], FUN=mean, na.rm=TRUE)
 projectSD <- sapply(mergeData[, sd_colname], FUN=sd, na.rm=TRUE)
 
