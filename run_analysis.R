@@ -77,8 +77,11 @@ projectSD <- sapply(mergeData[, sd_colname], FUN=sd, na.rm=TRUE)
 head(projectmean)
 head(projectSD)
 
+#Create output file
+mergeDataAggOut <- mergeDataAgg[, 2:1124]
+
 #Write output file per project instructions
-write.table(mergeDataAgg, "c:/rWork/projectAVE.txt",
+write.table(mergeDataAggOut, "c:/rWork/projectAVE.txt",
             row.names=FALSE, col.names=FALSE)
 
 
