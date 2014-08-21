@@ -63,7 +63,7 @@ mergeDataAggComplete <- cbind(mergeDataAggRow, rowave2)
 rownames(mergeDataAggRow) [7] <- c("Average")
 
 
-#Create groups of column names designating mean, sd, and ave
+#Create groups of column names designating mean and sd
 mean_colname <- c(3:5,43:45,83:85,123:125,163:165,203,216,229,242,255,
                   268:270,296:298,347:349,375:377,426:428,454:456,505,515,
                   518,528,531,541,544,554)
